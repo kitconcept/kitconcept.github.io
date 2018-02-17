@@ -3,7 +3,9 @@ import Link from 'gatsby-link'
 
 const IndexPage = () => (
   <div>
-    <h2>List of Open Source contributions by kitconcept GmbH.</h2>
+    <h2>
+      Open Source contributions by kitconcept GmbH.
+    </h2>
     <div>
       <h3>Plone Core</h3>
       <div>

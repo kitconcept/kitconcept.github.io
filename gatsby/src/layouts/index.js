@@ -36,6 +36,14 @@ const TemplateWrapper = ({ children }) => (
     >
       {children()}
     </div>
+    <div style={{
+      height: "100vh"
+    }}>
+      <h1>Plone</h1>
+      <h1>React</h1>
+      <h1>Jenkins</h1>
+      <h1>Solr</h1>
+    </div>
   </div>
 )
 
