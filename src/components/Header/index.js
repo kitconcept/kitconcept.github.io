@@ -23,7 +23,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          kitconcept Open Source
         </Link>
       </h1>
     </div>

@@ -7,7 +7,9 @@
     "gatsby": "^1.9.199",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-react-helmet": "^2.0.5",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "typography": "^0.16.6",
+    "typography-theme-bootstrap": "^0.16.7"
   },
   "keywords": [
     "gatsby"
@@ -16,12 +18,13 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && mv public docs",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "prettier": "^1.10.2"
   }
 }

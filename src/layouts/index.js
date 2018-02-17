@@ -5,6 +5,17 @@ import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import './index.css'
 
+import Typography from 'typography'
+import bootstrapTheme from 'typography-theme-bootstrap'
+bootstrapTheme.overrideThemeStyles = ({ rhythm }, options) => ({
+  'h2,h3': {
+    marginBottom: rhythm(1/2),
+    marginTop: rhythm(2),
+  }
+})
+
+const typography = new Typography(bootstrapTheme)
+
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
