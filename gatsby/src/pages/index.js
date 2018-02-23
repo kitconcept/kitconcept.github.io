@@ -17,8 +17,23 @@ const IndexPage = () => (
         <span>{pypistatsinfo.victor_releases}</span>
       </p>
       <p className="contrib-person">
+        <strong>Carsten Senger:</strong>{' '}
+        <span>{pypistatsinfo.carsten_releases}</span>
+      </p>
+      <p className="contrib-person">
         <strong>Roel Bruggink:</strong>{' '}
         <span>{pypistatsinfo.roel_releases}</span>
+      </p>
+    </div>
+    <div>
+      <h3>Total downloads</h3>
+      <p className="contrib-person">
+        <strong>kitconcept GmbH:</strong>{' '}
+        <span>
+          {pypistatsinfo.total_downloads.toLocaleString(navigator.language, {
+            minimumFractionDigits: 0,
+          })}
+        </span>
       </p>
     </div>
     <div>

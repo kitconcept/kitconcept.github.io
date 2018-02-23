@@ -9,10 +9,23 @@ const PypiStats = ({ children }) => {
     <div>
       {children}
       <div className="stats">
-        <strong>Downloads:</strong>{' '}
-        <span>{pypistatsinfo[name] ? pypistatsinfo[name].downloads : ''}</span>{' '}
-        <strong>Releases:</strong>{' '}
-        <span>{pypistatsinfo[name] ? pypistatsinfo[name].releases : ''}</span>
+        <div>
+          <strong>Downloads:</strong>{' '}
+          <span>
+            {pypistatsinfo[name]
+              ? pypistatsinfo[name].downloads.toLocaleString(
+                  navigator.language,
+                  {
+                    minimumFractionDigits: 0,
+                  },
+                )
+              : ''}
+          </span>
+        </div>
+        <div>
+          <strong>Releases:</strong>{' '}
+          <span>{pypistatsinfo[name] ? pypistatsinfo[name].releases : ''}</span>
+        </div>
       </div>
     </div>
   );

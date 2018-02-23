@@ -34,28 +34,56 @@ PACKAGES = [
     'robotframework-react',
     'robotframework-webpack',
     'pytest-solr',
-    'plone.recipe.codeanalysis'
+    'plone.recipe.codeanalysis',
+    'collective.contentrules.mailtolocalrole',
+    'collective.z3cform.datetimewidget',
+    'js.jquery_joyride',
+    'js.socialshareprivacy',
+    'Products.Marshall',
+    'sphinxcontrib-httpexample',
+    'wicked'
 ]
-TIMO_RELEASES = ['collective.solr', 'plone.restapi', 'plone.rest',
-    'plone.app.contenttypes', 'plone.app.collection', 'bobtemplates.kitconcept',
-    'plone.app.discussion', 'plone.formwidget.captcha', 'plone.formwidget.recaptcha',
-    'collective.akismet','collective.autoresizetextarea', 'collective.js.formvalidation',
+TIMO_RELEASES = [
+    'collective.solr', 'plone.restapi', 'plone.rest',
+    'plone.app.contenttypes', 'plone.app.collection',
+    'bobtemplates.kitconcept',
+    'plone.app.discussion', 'plone.formwidget.captcha',
+    'plone.formwidget.recaptcha',
+    'collective.akismet', 'collective.autoresizetextarea',
+    'collective.js.formvalidation',
     'collective.mailchimp', 'collective.disableuser',
     'upc.remotecontrol', 'plonetheme.mimbo', 'plonetheme.solemnity',
-    'plonetheme.stylized', 'plonetheme.sunburst', 'robotframework-djangolibrary',
+    'plonetheme.stylized', 'plonetheme.sunburst',
+    'robotframework-djangolibrary',
     'robotframework-react', 'robotframework-webpack', 'pytest-solr',
-    'plone.recipe.codeanalysis']
+    'plone.recipe.codeanalysis'
+]
 
-VICTOR_RELEASES = ['collective.geotransform', 'collective.cas4plone',
-                   'collective.pantry', 'collective.lesscss', 'plonetheme.barceloneta',
-                   'plone.app.multilingual', ]
+VICTOR_RELEASES = [
+    'collective.geotransform', 'collective.cas4plone',
+    'collective.pantry', 'collective.lesscss',
+    'plonetheme.barceloneta',
+    'plone.app.multilingual',
+]
 
 ROEL_RELEASES = ['collective.disableuser', ]
+
+CARSTEN_RELEASES = [
+    'collective.contentrules.mailtolocalrole',
+    'collective.z3cform.datetimewidget',
+    'js.jquery_joyride',
+    'js.socialshareprivacy',
+    'Products.Marshall',
+    'sphinxcontrib-httpexample',
+    'wicked',
+]
 
 results = {}
 timo_releases = 0
 victor_releases = 0
 roel_releases = 0
+carsten_releases = 0
+total_downloads = 0
 
 for package in PACKAGES:
     result = {}
@@ -72,17 +100,24 @@ for package in PACKAGES:
         result['downloads'] = downloads
         results.update({package: result})
 
-        # Package can be assigned to several people
+        # Package can be assigned to several people (not for now)
         if package in TIMO_RELEASES:
             timo_releases = timo_releases + result['releases']
         if package in VICTOR_RELEASES:
             victor_releases = victor_releases + result['releases']
         if package in ROEL_RELEASES:
             roel_releases = roel_releases + result['releases']
+        if package in CARSTEN_RELEASES:
+            carsten_releases = carsten_releases + result['releases']
+
+        # Downloads summariser
+        total_downloads = total_downloads + downloads
 
 results['timo_releases'] = timo_releases
 results['victor_releases'] = victor_releases
 results['roel_releases'] = roel_releases
+results['carsten_releases'] = carsten_releases
+results['total_downloads'] = total_downloads
 
 with open('src/stats.json', 'w') as statsfile:
     statsfile.write(json.dumps(results))
