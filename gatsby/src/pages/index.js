@@ -1,10 +1,26 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import PypiStats from '../components/Stats/pypi';
+import pypistatsinfo from '../stats.json';
 
 const IndexPage = () => (
   <div className="contributions">
     <h2>Open Source contributions by kitconcept GmbH.</h2>
+    <div>
+      <h3>Total releases per person</h3>
+      <p className="contrib-person">
+        <strong>Timo Stollenwerk:</strong>{' '}
+        <span>{pypistatsinfo.timo_releases}</span>
+      </p>{' '}
+      <p className="contrib-person">
+        <strong>Victor Fernández de Alba:</strong>{' '}
+        <span>{pypistatsinfo.victor_releases}</span>
+      </p>
+      <p className="contrib-person">
+        <strong>Roel Bruggink:</strong>{' '}
+        <span>{pypistatsinfo.roel_releases}</span>
+      </p>
+    </div>
     <div>
       <h3>Plone Core</h3>
       <div className="package">

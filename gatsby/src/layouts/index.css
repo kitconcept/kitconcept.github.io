@@ -631,6 +631,7 @@ pre tt:after {
 .contributions div:first-child h3 { margin-top: 40px; }
 .package p,
 .package h6,
-.package .stats {
+.package .stats,
+.contrib-person {
   margin-left: 10px;
 }

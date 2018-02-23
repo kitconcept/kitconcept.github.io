@@ -20,7 +20,7 @@
     "postinstall": "virtualenv . || virtualenv-2.7 . && bin/pip install -r requirements.txt",
     "updatestats": "bin/python getpypistats.py",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "(gatsby build --prefix-paths && cp -Rv public/* ../ && cd .. && git add . && git ci -am 'Publish last version to GH pages' && git push)",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
