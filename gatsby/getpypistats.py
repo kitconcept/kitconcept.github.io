@@ -41,7 +41,23 @@ PACKAGES = [
     'js.socialshareprivacy',
     'Products.Marshall',
     'sphinxcontrib-httpexample',
-    'wicked'
+    'wicked',
+    'plone.api',
+    'Products.TinyMCE',
+    'plone.app.changeownership',
+    'collective.multilanguagefields',
+    'fourdigits.seo',
+    'collective.classifieds',
+    'iw.rejectanonymous',
+    'collective.alias',
+    'fourdigits.portlet.keywordrelated',
+    'fourdigits.remotemembrane',
+    'Products.Faq',
+    'collective.ploneslimbar',
+    'Products.PloneSoftwareCenter',
+    'collective.anonymousview',
+    'fourdigits.chosen',
+    'collective.ordereddict'
 ]
 TIMO_RELEASES = [
     'collective.solr', 'plone.restapi', 'plone.rest',
@@ -66,7 +82,25 @@ VICTOR_RELEASES = [
     'plone.app.multilingual',
 ]
 
-ROEL_RELEASES = ['collective.disableuser', ]
+ROEL_RELEASES = [
+    'collective.disableuser',
+    'plone.api',
+    'Products.TinyMCE',
+    'plone.app.changeownership',
+    'collective.multilanguagefields',
+    'fourdigits.seo',
+    'collective.classifieds',
+    'iw.rejectanonymous',
+    'collective.alias',
+    'fourdigits.portlet.keywordrelated',
+    'fourdigits.remotemembrane',
+    'Products.Faq',
+    'collective.ploneslimbar',
+    'Products.PloneSoftwareCenter',
+    'collective.anonymousview',
+    'fourdigits.chosen',
+    'collective.ordereddict'
+]
 
 CARSTEN_RELEASES = [
     'collective.contentrules.mailtolocalrole',
@@ -96,7 +130,11 @@ for package in PACKAGES:
         result['releases'] = len(rq['releases'].keys())
         downloads = 0
         for release in rq['releases']:
-            downloads = downloads + rq['releases'][release][0]['downloads']
+            try:
+                downloads = downloads + rq['releases'][release][0]['downloads']
+            except:
+                pass
+
         result['downloads'] = downloads
         results.update({package: result})
 

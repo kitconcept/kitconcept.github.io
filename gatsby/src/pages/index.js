@@ -98,6 +98,21 @@ const IndexPage = () => (
           <h6>Co-author: Victor Fernandez de Alba</h6>
         </PypiStats>
       </div>
+      <div className="package">
+        <PypiStats>
+          <h4>plone.api</h4>
+          <p>A Plone API.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>Products.TinyMCE</h4>
+          <p>
+            Adds support for TinyMCE, a platform independent web based
+            Javascript HTML WYSIWYG editor, to Plone.
+          </p>
+        </PypiStats>
+      </div>
     </div>
     <div>
       <h3>Plone Add-on Products</h3>
@@ -251,6 +266,100 @@ const IndexPage = () => (
             wicked is a compact syntax for doing wiki-like content linking and
             creation in zope and plone.
           </p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>plone.app.changeownership</h4>
+          <p>Change Plone objects ownership.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>collective.multilanguagefields</h4>
+          <p>Multi language fields for Plone.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>fourdigits.seo</h4>
+          <p>Package for SEO.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>collective.classifieds</h4>
+          <p>Add classifieds to your Plone intranet or website.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>iw.rejectanonymous</h4>
+          <p>
+            Disallow access to a Plone site and its children if user is
+            anonymous.
+          </p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>collective.alias</h4>
+          <p>Aliasing of Plone content.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>fourdigits.portlet.keywordrelated</h4>
+          <p>
+            A portlet showing related items, based on the current contexts tags.
+          </p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>fourdigits.remotemembrane</h4>
+          <p>
+            A set of PAS plugins so users are authenticated from another Plone
+            site.
+          </p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>Products.Faq</h4>
+          <p>FAQ - An AT contenttype for Plone.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>collective.ploneslimbar</h4>
+          <p>slimbar for listing local communities sites.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>Products.PloneSoftwareCenter</h4>
+          <p>
+            PloneSoftwareCenter is a tool that keeps track of software projects.
+          </p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>collective.anonymousview</h4>
+          <p>Allow a loggedin user to view a page as an anonymous user.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>fourdigits.chosen</h4>
+          <p>Integrates the Chosen javascript library in Plone.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>collective.ordereddict</h4>
+          <p>Ordered Dictionary for Python 2.4 or later.</p>
         </PypiStats>
       </div>
       <div>
