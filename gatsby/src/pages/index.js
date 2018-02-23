@@ -209,44 +209,48 @@ const IndexPage = () => (
       </div>
       <div className="package">
         <PypiStats>
-          <h4>collective.contentrules.mailtolocalrole</h4>
+          <h4>Send e-mail to users having a localrole on the object.</h4>
           <p>Recent activity portlet for Plone.</p>
         </PypiStats>
       </div>
       <div className="package">
         <PypiStats>
           <h4>collective.z3cform.datetimewidget</h4>
-          <p>Recent activity portlet for Plone.</p>
+          <p>z3c.form date and datetime widgets.</p>
         </PypiStats>
       </div>
       <div className="package">
         <PypiStats>
           <h4>js.jquery_joyride</h4>
-          <p>Recent activity portlet for Plone.</p>
+          <p>Fanstatic packaging of joyride.</p>
         </PypiStats>
       </div>
       <div className="package">
         <PypiStats>
           <h4>js.socialshareprivacy</h4>
-          <p>Recent activity portlet for Plone.</p>
+          <p>Fanstatic packaging of jquery.socialshareprivacy.</p>
         </PypiStats>
       </div>
       <div className="package">
         <PypiStats>
           <h4>Products.Marshall</h4>
-          <p>Recent activity portlet for Plone.</p>
+          <p>Configurable Marshallers for Archetypes.</p>
         </PypiStats>
       </div>
       <div className="package">
         <PypiStats>
           <h4>sphinxcontrib-httpexample</h4>
-          <p>Recent activity portlet for Plone.</p>
+          <p>Adds example directive for sphinx-contrib httpdomain.</p>
         </PypiStats>
       </div>
       <div className="package">
         <PypiStats>
           <h4>wicked</h4>
-          <p>Recent activity portlet for Plone.</p>
+          <p>
+            {' '}
+            wicked is a compact syntax for doing wiki-like content linking and
+            creation in zope and plone.
+          </p>
         </PypiStats>
       </div>
       <div>
