@@ -1,5 +1,6 @@
 import React from 'react';
 import pypistatsinfo from '../../stats.json';
+import format_number from '../../utils';
 
 const PypiStats = ({ children }) => {
   // Only accept name as h4 element of children
@@ -13,12 +14,7 @@ const PypiStats = ({ children }) => {
           <strong>Downloads:</strong>{' '}
           <span>
             {pypistatsinfo[name]
-              ? pypistatsinfo[name].downloads.toLocaleString(
-                  navigator.language,
-                  {
-                    minimumFractionDigits: 0,
-                  },
-                )
+              ? format_number(pypistatsinfo[name].downloads)
               : ''}
           </span>
         </div>

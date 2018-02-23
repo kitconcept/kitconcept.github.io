@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import PypiStats from '../components/Stats/pypi';
 import pypistatsinfo from '../stats.json';
+import format_number from '../utils';
 
 const IndexPage = () => (
   <div className="contributions">
@@ -29,11 +30,7 @@ const IndexPage = () => (
       <h3>Total downloads</h3>
       <p className="contrib-person">
         <strong>kitconcept GmbH:</strong>{' '}
-        <span>
-          {pypistatsinfo.total_downloads.toLocaleString(navigator.language, {
-            minimumFractionDigits: 0,
-          })}
-        </span>
+        <span>{format_number(pypistatsinfo.total_downloads)}</span>
       </p>
     </div>
     <div>
