@@ -1,6 +1,6 @@
 import React from 'react';
 import pypistatsinfo from '../../stats.json';
-import format_number from '../../utils';
+import { format_number } from '../../utils';
 
 const PypiStats = ({ children }) => {
   // Only accept name as h4 element of children

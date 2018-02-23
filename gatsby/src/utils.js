@@ -12,4 +12,4 @@ const format_number = number => {
   return number;
 };
 
-export default format_number;
+export { format_number };

@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import PypiStats from '../components/Stats/pypi';
 import pypistatsinfo from '../stats.json';
-import format_number from '../utils';
+import { format_number } from '../utils';
 
 const IndexPage = () => (
   <div className="contributions">
@@ -204,6 +204,48 @@ const IndexPage = () => (
       <div className="package">
         <PypiStats>
           <h4>collective.portlet.recentactivity</h4>
+          <p>Recent activity portlet for Plone.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>collective.contentrules.mailtolocalrole</h4>
+          <p>Recent activity portlet for Plone.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>collective.z3cform.datetimewidget</h4>
+          <p>Recent activity portlet for Plone.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>js.jquery_joyride</h4>
+          <p>Recent activity portlet for Plone.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>js.socialshareprivacy</h4>
+          <p>Recent activity portlet for Plone.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>Products.Marshall</h4>
+          <p>Recent activity portlet for Plone.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>sphinxcontrib-httpexample</h4>
+          <p>Recent activity portlet for Plone.</p>
+        </PypiStats>
+      </div>
+      <div className="package">
+        <PypiStats>
+          <h4>wicked</h4>
           <p>Recent activity portlet for Plone.</p>
         </PypiStats>
       </div>
