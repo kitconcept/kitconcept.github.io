@@ -224,8 +224,8 @@ const IndexPage = () => (
       </div>
       <div className="package">
         <PypiStats>
-          <h4>Send e-mail to users having a localrole on the object.</h4>
-          <p>Recent activity portlet for Plone.</p>
+          <h4>collective.contentrules.mailtolocalrole</h4>
+          <p>Send e-mail to users having a localrole on the object.</p>
         </PypiStats>
       </div>
       <div className="package">
